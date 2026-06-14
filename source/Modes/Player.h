@@ -13,6 +13,7 @@
 #include "Rulesets/Ruleset.h"
 #include "Rulesets/RulesetOsu.h"
 #include "DataStorage/Settings.h"
+#include "Helpers/VideoPlayer.h"
 
 typedef enum {
 	PLAYSTATE_PLAY,
