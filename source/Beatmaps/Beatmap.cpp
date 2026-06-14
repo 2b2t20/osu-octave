@@ -37,6 +37,10 @@ Beatmap::Beatmap(const std::string &filename, const std::string &basedir) {
             mBackgroundFilepath = mBaseDir + "/" + e.file;
             mBackgroundFilename = e.file;
         }
+        if (e.type == osuParser::eVideo) {
+            mVideoFilename = mBaseDir + "/" + e.file;
+            mVideoOffsetMs = e.begin;
+        }
         if (e.type == osuParser::eBreak) {
             mBreakPoints.push_back({e.begin, e.end});
             mBreakDurationTotal += (e.end - e.begin);
