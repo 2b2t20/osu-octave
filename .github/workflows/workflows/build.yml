@@ -23,6 +23,7 @@ jobs:
           export VITASDK=/usr/local/vitasdk
           sudo mkdir -p $VITASDK
           sudo chown $USER $VITASDK
+          sudo rm -rf /usr/local/vitasdk
           ./bootstrap-vitasdk.sh
           echo "VITASDK=/usr/local/vitasdk" >> $GITHUB_ENV
           echo "/usr/local/vitasdk/bin" >> $GITHUB_PATH
