@@ -74,6 +74,7 @@ add_executable(${PROJECT_NAME}
         ${PROJECT_SOURCE_DIR}/source/Helpers/AudioManager.cpp
         ${PROJECT_SOURCE_DIR}/source/Helpers/OsuSliderCurves.cpp
         ${PROJECT_SOURCE_DIR}/source/Helpers/PreviewBuffer.cpp
+        ${PROJECT_SOURCE_DIR}/source/Helpers/VideoPlayer.cpp
         ${PROJECT_SOURCE_DIR}/source/UIElements/UIElementsManager.cpp
 
         ${PROJECT_SOURCE_DIR}/lib/OsuParser/OsuParser.cpp
@@ -108,6 +109,7 @@ if (BUILDTARGET STREQUAL "vita")
             ogg
             png
             pthread
+            SceAvPlayer_stub
             ScePower_stub
             SceDisplay_stub
             SceCtrl_stub
