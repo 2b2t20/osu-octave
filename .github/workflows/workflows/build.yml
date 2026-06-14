@@ -17,6 +17,7 @@ jobs:
 
       - name: Install VitaSDK
         run: |
+          sudo rm -rf /usr/local/vitasdk
           git clone https://github.com/vitasdk/vdpm /tmp/vdpm
           cd /tmp/vdpm
           export VITASDK=/usr/local/vitasdk
